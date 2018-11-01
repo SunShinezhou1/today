@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="14.5dp"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:id="@+id/head_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/erweima" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.5dp"
+                android:text="扫一扫"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/head_rr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/head_ll"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:id="@+id/head_img_xiaoxi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/xx" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/head_img_xiaoxi"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="消息"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/head_ll"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="13dp"
+            android:layout_toLeftOf="@id/head_rr"
+            android:layout_toRightOf="@id/head_ll"
+            android:background="@drawable/sousuokuang">
+            <ImageView
+                android:id="@+id/head_img_sousuo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:src="@drawable/fdj"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="9dp"
+                android:layout_toRightOf="@id/head_img_sousuo"
+                android:background="@null"
+                android:hint="阿斯顿马丁2016豪华限量版"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+<com.jcodecraeer.xrecyclerview.XRecyclerView
+    android:id="@+id/mxrc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</com.jcodecraeer.xrecyclerview.XRecyclerView>
+    <ImageButton
+        android:id="@+id/zd"
+        android:layout_marginBottom="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/zd"
+        android:visibility="visible"
+        />
+</RelativeLayout>

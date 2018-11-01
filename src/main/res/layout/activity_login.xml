@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".activity.loginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/colse"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/colses" />
+
+        <TextView
+            android:id="@+id/kefu"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:text="客服" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/dog"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@drawable/gou"/>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/gj"
+            android:text="国家/地区"
+            android:textSize="16sp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/dq"
+            android:text="中国(+86)  ＞"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="12dp"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="0.5dp"/>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <EditText
+           android:hint="请输入手机号"
+           android:textSize="16sp"
+           android:layout_alignParentLeft="true"
+           android:background="@null"
+           android:layout_width="match_parent"
+           android:layout_height="60dp" />
+   <ImageView
+       android:id="@+id/clear"
+       android:src="@drawable/clear"
+       android:layout_marginTop="23dp"
+       android:layout_alignParentRight="true"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray"
+        android:layout_height="0.5dp"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:text="获取验证码"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="账号密码登录"
+            android:textSize="13sp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="新用户注册"
+            android:textSize="13sp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="160dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@android:color/darker_gray"
+            android:layout_width="350dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:layout_height="0.5dp"/>
+        <TextView
+            android:text="其他方式登录"
+            android:textColor="#BEBEBE"
+            android:layout_centerInParent="true"
+            android:background="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/wx"
+            android:drawableTop="@mipmap/wx"
+            android:layout_marginLeft="50sp"
+            android:layout_alignParentLeft="true"
+            android:button="@null"
+            android:gravity="center"
+            android:text="微信登录"
+            android:textColor="#BEBEBE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:drawableTop="@mipmap/qq"
+            android:id="@+id/qq"
+            android:button="@null"
+            android:text="QQ登陆"
+            android:textColor="#BEBEBE"
+            android:layout_marginRight="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="登录即代表您已同意"
+            android:textColor="#BEBEBE"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/ys"
+            android:text="《京东隐私政策》"
+            android:textSize="12sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
